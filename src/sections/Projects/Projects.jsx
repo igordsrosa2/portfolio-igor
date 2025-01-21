@@ -13,7 +13,7 @@ const projects = [
     image: ucl,
     description: "Análise e exploração do conjunto de dados que contém as principais estatísticas dos jogadores da temporada 2021-22 da Liga dos Campeões da UEFA .",
     link: "https://github.com/igordsrosa2/ucl22-analysis",
-    link2: "https://app.powerbi.com/reportEmbed?reportId=6e3d3e58-12e6-495f-9c6c-3f1ede6fa3a4&autoAuth=true&ctid=7cd743f8-0918-4e68-84e9-9dcd82e480af"
+    link2: "https://app.powerbi.com/view?r=eyJrIjoiZjRkMGM3NDItMzY2OS00NmQ0LWJkZGMtM2E1OWJjM2Y2MDE1IiwidCI6IjdjZDc0M2Y4LTA5MTgtNGU2OC04NGU5LTlkY2Q4MmU0ODBhZiJ9"
   },
   {
     id: 2,
