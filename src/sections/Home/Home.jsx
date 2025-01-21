@@ -83,6 +83,14 @@ function Home() {
           <p>Curso técnico em eletroeletrônica (JUN - 2017 / JUN 2019) - Senai Santo André</p>
         </div>
         <div className={styles.popupSection}>
+          <h4>Idiomas</h4>
+          <h4>Inglês</h4><br />
+          <p><strong>Escrita</strong> - Intermediário</p>
+          <p><strong>Leitura</strong> - Intermediário</p>
+          <p><strong>Conversação</strong> - Intermediário</p>
+          <p><strong>Compreensão</strong> - Intermediário</p>
+        </div>
+        <div className={styles.popupSection}>
           <h4>Experiência</h4>
           <p>Embora ainda não possua experiência profissional na área de TI, estou determinado a desenvolver habilidades práticas e adquirir conhecimento através de desafios e oportunidades no setor. Busco crescimento profissional e estou comprometido em contribuir ativamente para o sucesso de projetos e equipes.</p>
         </div>

@@ -1,0 +1,48 @@
+.contactCard {
+  background-color: var(--background-color); /* Usando a mesma variável de cor */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  margin: 20px auto; /* Adicionando margem para centralizar */
+}
+
+.contactCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contactCard h2 {
+  font-size: 24px;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--text-color); /* Cor do texto */
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoItem h3 {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: var(--text-color); /* Cor do título */
+}
+
+.infoItem p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+@media (min-width: 800px) {
+  .contactCard {
+    width: 350px;
+  }
+}
