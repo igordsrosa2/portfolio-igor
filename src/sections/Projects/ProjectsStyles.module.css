@@ -1,0 +1,72 @@
+.container {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: -140px;
+  }
+  
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .projectCard {
+    background-color: var(--project-card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .projectCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .projectImage {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .projectInfo h3 {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .projectInfo p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
+  
+  .projectInfo a {
+    color: var(--btn-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .projectInfo a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 800px) {
+    .projectCard {
+      width: 300px;
+    }
+  }
+  
