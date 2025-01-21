@@ -7,6 +7,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   margin: 20px auto; /* Adicionando margem para centralizar */
+  margin-top: -120px;
 }
 
 .contactCard:hover {
@@ -41,8 +42,16 @@
   color: var(--text-color);
 }
 
-@media (min-width: 800px) {
+@media (width < 800px) {
   .contactCard {
     width: 350px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1399px) {
+  .contactCard {
+    width: 350px;
+    margin-top: -20px;
   }
 }

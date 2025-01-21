@@ -93,10 +93,23 @@
     }
   }
 
-  @media (min-width: 0px) and (max-width: 800px) {
+  @media (min-width: 400px) and (max-width: 800px) {
     .projectList {
       grid-template-columns: 1fr;
       gap: 20px;
       justify-items: center;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 399px) {
+    .projectList {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .sectionTitle {
+      font-size: 32px;
+      margin-top: -90px;
     }
   }
