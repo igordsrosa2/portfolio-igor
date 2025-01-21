@@ -69,7 +69,6 @@
 
 .description {
   max-width: 24ch;
-  margin-left: 28px;
 }
 
 .info {
@@ -195,6 +194,10 @@
       max-width: 400px;
       width: 400px;
     }
+
+    .description {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -218,5 +221,26 @@
       max-width: 400px;
       width: 400px;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .description {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .colorModeContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Opcional: pode ajudar no alinhamento */
+  }
+
+  .colorMode {
+    position: static; /* Remove a posição absoluta no mobile */
+    margin-top: 10px; /* Espaço entre o ícone e o restante do conteúdo */
+    width: 35px; /* Aumenta o tamanho para facilitar o clique */
   }
 }

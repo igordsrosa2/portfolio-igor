@@ -79,7 +79,7 @@ function Home() {
         </div>
         <div className={styles.popupSection}>
           <h4>Formação</h4>
-          <p>Curso superior em tecnologia em análise e desenvolvimento de Sistemas (JAN - 2023 / DEZ 2024) - Senai São Caetano</p><br />
+          <p>Curso superior de tecnologia em análise e desenvolvimento de Sistemas (JAN - 2023 / DEZ 2024) - Senai São Caetano</p><br />
           <p>Curso técnico em eletroeletrônica (JUN - 2017 / JUN 2019) - Senai Santo André</p>
         </div>
         <div className={styles.popupSection}>
