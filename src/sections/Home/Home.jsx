@@ -1,9 +1,7 @@
-import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/Design uten navn.png';
+import styles from './HomeStyles.module.css';
+import profilePicture from '../../assets/profilePicture.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
@@ -11,21 +9,20 @@ import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
-function Hero() {
+function Home() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
-    <section id="hero" className={styles.container}>
+    <section id="home" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
-          src={heroImg}
-          className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          src={profilePicture}
+          className={styles.home}
+          alt="Profile picture "
         />
         <img
           className={styles.colorMode}
@@ -50,14 +47,14 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-        Transformando dados em decisões estratégicas e insights valiosos..
+            Transformando dados em decisões estratégicas e insights valiosos..
         </p>
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          <button className="hover">Curriculo</button>
         </a>
       </div>
     </section>
   );
 }
 
-export default Hero;
+export default Home;

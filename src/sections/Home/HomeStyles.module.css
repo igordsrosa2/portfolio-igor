@@ -7,7 +7,7 @@
   height: 100dvh;
   min-height: 500px;
 
-  .hero {
+  .home {
     max-width: 200px;
   }
 
@@ -69,6 +69,7 @@
 
 .description {
   max-width: 24ch;
+  margin-left: 28px;
 }
 
 .info {
@@ -83,7 +84,7 @@
     align-items: center;
     justify-content: space-evenly;
 
-    .hero {
+    .home {
       max-width: 350px;
       width: 350px;
     }
@@ -92,7 +93,7 @@
 
 @media (width >= 1400px) {
   .container {
-    .hero {
+    .home {
       max-width: 400px;
       width: 400px;
     }
