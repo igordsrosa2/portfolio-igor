@@ -20,6 +20,7 @@ const projects = [
     name: "Nike Global Sales",
     image: nike,
     link: 'https://github.com/igordsrosa2/nike-analysis',
+    link2: 'https://app.powerbi.com/view?r=eyJrIjoiNzkyYmY1NjQtMmYyOC00YWZkLTkyYzAtODI4ZmYxYzc4YzNkIiwidCI6IjdjZDc0M2Y4LTA5MTgtNGU2OC04NGU5LTlkY2Q4MmU0ODBhZiJ9',
     description: "Análise dos dados de vendas da Nike no ano de 2024, com o objetivo de entender o desempenho da marca em diferentes mercados e identificar tendências de consumo.",
   }
 ];
