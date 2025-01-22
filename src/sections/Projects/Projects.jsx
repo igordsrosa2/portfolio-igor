@@ -9,18 +9,18 @@ const projects = [
   {
     id: 1,
     name: "UEFA CHAMPIONS LEAGUE",
-    sub: "⠀",
     image: ucl,
     description: "Análise e exploração do conjunto de dados que contém as principais estatísticas dos jogadores da temporada 2021-22 da Liga dos Campeões da UEFA .",
+    sub: "⠀",
     link: "https://github.com/igordsrosa2/ucl22-analysis",
     link2: "https://app.powerbi.com/view?r=eyJrIjoiYzM0MmViNzItMzU5NC00OWMwLTk1MjQtOTM3NDhmYTRlZTZmIiwidCI6IjdjZDc0M2Y4LTA5MTgtNGU2OC04NGU5LTlkY2Q4MmU0ODBhZiJ9"
   },
   {
     id: 2,
     name: "Nike Global Sales",
-    sub: "Em Desenvolvimento ",
     image: nike,
-    description: "Projeto em construção para análise e exploração das tendências globais de vendas da Nike em todas as regiões e categorias em 2024.",
+    link: 'https://github.com/igordsrosa2/nike-analysis',
+    description: "Análise dos dados de vendas da Nike no ano de 2024, com o objetivo de entender o desempenho da marca em diferentes mercados e identificar tendências de consumo.",
   }
 ];
 
@@ -34,8 +34,8 @@ const Projects = () => {
             <img src={project.image} alt={project.name} className={styles.projectImage} />
             <div className={styles.projectInfo}>
               <h3>{project.name}</h3>
-              <h3 className={styles.desenvolvimento}>{project.sub}</h3>
               <p>{project.description}</p>
+              <h3 className={styles.desenvolvimento}>{project.sub}</h3>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Acessar o repositório
               </a>

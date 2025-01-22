@@ -11,6 +11,7 @@ import matplotlibIcon from "../../assets/matplotlib.svg";
 import seabornIcon from "../../assets/seaborn.svg";
 import gitIcon from "../../assets/git.svg";
 import githubIcon from "../../assets/github.svg";
+import scikitylearn from "../../assets/scikit-learn.svg";
 
 const skills = [
     { name: "Python", icon: pythonIcon },
@@ -21,8 +22,10 @@ const skills = [
     { name: "NumPy", icon: numpyIcon },
     { name: "Matplotlib", icon: matplotlibIcon },
     { name: "Seaborn", icon: seabornIcon },
+    { name: "Scikit-Learn", icon: scikitylearn },
     { name: "Git", icon: gitIcon },
     { name: "GitHub", icon: githubIcon },
+
 ];
 
 function Skills() {
