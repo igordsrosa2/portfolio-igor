@@ -4,6 +4,7 @@ import styles from './ProjectsStyles.module.css';
 // Importe as imagens dos projetos
 import ucl from '../../assets/logoucl.svg';
 import nike from '../../assets/nike.svg';
+import logoTEF from '../../assets/logoTEF.png'
 
 const projects = [
   {
@@ -11,7 +12,6 @@ const projects = [
     name: "UEFA CHAMPIONS LEAGUE",
     image: ucl,
     description: "Análise e exploração do conjunto de dados que contém as principais estatísticas dos jogadores da temporada 2021-22 da Liga dos Campeões da UEFA .",
-    sub: "⠀",
     link: "https://github.com/igordsrosa2/ucl22-analysis",
     link2: "https://app.powerbi.com/view?r=eyJrIjoiYzM0MmViNzItMzU5NC00OWMwLTk1MjQtOTM3NDhmYTRlZTZmIiwidCI6IjdjZDc0M2Y4LTA5MTgtNGU2OC04NGU5LTlkY2Q4MmU0ODBhZiJ9"
   },
@@ -22,6 +22,13 @@ const projects = [
     link: 'https://github.com/igordsrosa2/nike-analysis',
     link2: 'https://app.powerbi.com/view?r=eyJrIjoiNzkyYmY1NjQtMmYyOC00YWZkLTkyYzAtODI4ZmYxYzc4YzNkIiwidCI6IjdjZDc0M2Y4LTA5MTgtNGU2OC04NGU5LTlkY2Q4MmU0ODBhZiJ9',
     description: "Análise dos dados de vendas da Nike no ano de 2024, com o objetivo de entender o desempenho da marca em diferentes mercados e identificar tendências de consumo.",
+  },
+    {
+    id: 2,
+    name: "Sistema de Jogos TEF",
+    image: logoTEF,
+    link: 'https://github.com/igordsrosa2/JogosTEF',
+    description: "sistema que permite controlar (registrar, editar e excluir) as partidas realizadas pelo time TEF em 2025",
   }
 ];
 
@@ -41,9 +48,6 @@ const Projects = () => {
                 Acessar o repositório
               </a>
               <br /><br />
-              <a href={project.link2} target="_blank" rel="noopener noreferrer2">
-                Acessar o dashboard
-              </a>
             </div>
           </div>
         ))}
