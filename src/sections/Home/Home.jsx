@@ -1,22 +1,22 @@
-import styles from './HomeStyles.module.css';
-import profilePicture from '../../assets/profilePicture.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
-import githubLight from '../../assets/github-light.svg';
-import githubDark from '../../assets/github-dark.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/IgorDosSantosRosa.pdf';
-import { useTheme } from '../../common/ThemeContext';
-import { useState } from 'react';
+import styles from "./HomeStyles.module.css";
+import profilePicture from "../../assets/profilePicture.png";
+import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg";
+import githubLight from "../../assets/github-light.svg";
+import githubDark from "../../assets/github-dark.svg";
+import linkedinLight from "../../assets/linkedin-light.svg";
+import linkedinDark from "../../assets/linkedin-dark.svg";
+import CV from "../../assets/IgorDosSantosRosa.pdf";
+import { useTheme } from "../../common/ThemeContext";
+import { useState } from "react";
 
 function Home() {
   const { theme, toggleTheme } = useTheme();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const themeIcon = theme === 'light' ? sun : moon;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const themeIcon = theme === "light" ? sun : moon;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
   const handlePopupToggle = () => setIsPopupOpen(!isPopupOpen);
 
@@ -54,7 +54,7 @@ function Home() {
           Transformando dados em decisões estratégicas e insights valiosos..
         </p>
         <div className={styles.buttons}>
-        <button className="hover" onClick={handlePopupToggle}>
+          <button className="hover" onClick={handlePopupToggle}>
             Sobre Mim
           </button>
           <a href={CV} download>
@@ -63,44 +63,70 @@ function Home() {
         </div>
       </div>
 
-{/* Popup */}
-{isPopupOpen && (
-  <div className={styles.popupOverlay}>
-    <div className={styles.popup}>
-      <h3>Sobre Mim</h3>
-      <div className={styles.popupContent}>
-        <div className={styles.popupSection}>
-          <h4>Nome</h4>
-          <p>Igor dos Santos Rosa</p>
+      {/* Popup */}
+      {isPopupOpen && (
+        <div className={styles.popupOverlay}>
+          <div className={styles.popup}>
+            <h3>Sobre Mim</h3>
+            <div className={styles.popupContent}>
+              <div className={styles.popupSection}>
+                <h4>Nome</h4>
+                <p>Igor dos Santos Rosa</p>
+              </div>
+              <div className={styles.popupSection}>
+                <h4>Idade</h4>
+                <p>25 anos</p>
+              </div>
+              <div className={styles.popupSection}>
+                <h4>Formação</h4>
+                <p>
+                  Engenharia de Software (JAN - 2025 / DEZ 2028) - Unicesumar
+                </p>
+                <br />
+                <p>
+                  Curso superior de tecnologia em análise e desenvolvimento de
+                  Sistemas (JAN - 2023 / DEZ 2024) - Senai São Caetano
+                </p>
+                <br />
+                <p>
+                  Curso técnico em eletroeletrônica (JUN - 2017 / JUN 2019) -
+                  Senai Santo André
+                </p>
+              </div>
+              <div className={styles.popupSection}>
+                <h4>Idiomas</h4>
+                <h4>Inglês</h4>
+                <br />
+                <p>
+                  <strong>Escrita</strong> - Intermediário
+                </p>
+                <p>
+                  <strong>Leitura</strong> - Intermediário
+                </p>
+                <p>
+                  <strong>Conversação</strong> - Intermediário
+                </p>
+                <p>
+                  <strong>Compreensão</strong> - Intermediário
+                </p>
+              </div>
+              <div className={styles.popupSection}>
+                <h4>Experiência</h4>
+                <p>
+                  Embora ainda não possua experiência profissional na área de
+                  TI, estou determinado a desenvolver habilidades práticas e
+                  adquirir conhecimento através de desafios e oportunidades no
+                  setor. Busco crescimento profissional e estou comprometido em
+                  contribuir ativamente para o sucesso de projetos e equipes.
+                </p>
+              </div>
+            </div>
+            <button onClick={handlePopupToggle} className={styles.closePopup}>
+              Fechar
+            </button>
+          </div>
         </div>
-        <div className={styles.popupSection}>
-          <h4>Idade</h4>
-          <p>25 anos</p>
-        </div>
-        <div className={styles.popupSection}>
-          <h4>Formação</h4>
-          <p>Curso superior de tecnologia em análise e desenvolvimento de Sistemas (JAN - 2023 / DEZ 2024) - Senai São Caetano</p><br />
-          <p>Curso técnico em eletroeletrônica (JUN - 2017 / JUN 2019) - Senai Santo André</p>
-        </div>
-        <div className={styles.popupSection}>
-          <h4>Idiomas</h4>
-          <h4>Inglês</h4><br />
-          <p><strong>Escrita</strong> - Intermediário</p>
-          <p><strong>Leitura</strong> - Intermediário</p>
-          <p><strong>Conversação</strong> - Intermediário</p>
-          <p><strong>Compreensão</strong> - Intermediário</p>
-        </div>
-        <div className={styles.popupSection}>
-          <h4>Experiência</h4>
-          <p>Embora ainda não possua experiência profissional na área de TI, estou determinado a desenvolver habilidades práticas e adquirir conhecimento através de desafios e oportunidades no setor. Busco crescimento profissional e estou comprometido em contribuir ativamente para o sucesso de projetos e equipes.</p>
-        </div>
-      </div>
-      <button onClick={handlePopupToggle} className={styles.closePopup}>
-        Fechar
-      </button>
-    </div>
-  </div>
-)}
+      )}
     </section>
   );
 }
