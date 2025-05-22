@@ -80,10 +80,6 @@ function Home() {
               <div className={styles.popupSection}>
                 <h4>Formação</h4>
                 <p>
-                  Engenharia de Software (JAN - 2025 / DEZ 2028) - Unicesumar
-                </p>
-                <br />
-                <p>
                   Curso superior de tecnologia em análise e desenvolvimento de
                   Sistemas (JAN - 2023 / DEZ 2024) - Senai São Caetano
                 </p>

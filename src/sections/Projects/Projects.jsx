@@ -27,14 +27,6 @@ const projects = [
     description:
       "Análise dos dados de vendas da Nike no ano de 2024, com o objetivo de entender o desempenho da marca em diferentes mercados e identificar tendências de consumo.",
   },
-  {
-    id: 2,
-    name: "Sistema de Jogos TEF",
-    image: logoTEF,
-    link: "https://github.com/igordsrosa2/JogosTEF",
-    description:
-      "sistema que permite controlar (registrar, editar e excluir) as partidas realizadas pelo time TEF em 2025",
-  },
 ];
 
 const Projects = () => {
